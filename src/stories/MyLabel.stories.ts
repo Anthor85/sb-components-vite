@@ -11,6 +11,7 @@ const meta = {
   argTypes: {
     size: { control: "inline-radio" },
     fontColor: { control: "color" },
+    backgroundColor: { control: "color" },
   },
 } satisfies Meta<typeof MyLabel>;
 
@@ -42,5 +43,13 @@ export const CustomColor: Story = {
   args: {
     label: "Custom Color",
     fontColor: "pink",
+  },
+};
+
+export const BackgroundColor: Story = {
+  args: {
+    label: "Background Color",
+    fontColor: "pink",
+    backgroundColor: "black",
   },
 };
